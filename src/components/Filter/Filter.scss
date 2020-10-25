@@ -1,0 +1,14 @@
+.users-list-filter {
+  display: flex;
+  padding: 0 20px;
+  & input {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid;
+    height: 25px;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+}

@@ -1,0 +1,24 @@
+@import '../../colors.scss';
+
+.clock-content {
+  border: 1px solid black;
+  background-color: $overlay;
+}
+.clock-content p {
+  font-size: 2rem;
+  margin: 0;
+  padding: 10px;
+  color: #fff;
+  font-weight: 300;
+  width: 180px;
+  text-align: center;
+}
+
+.clock {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 20px;
+}

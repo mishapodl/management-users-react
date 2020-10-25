@@ -1,5 +1,6 @@
 import React from 'react';
+import './Preloader.scss';
 
 export const Preloader = () => {
-  return <div style={{ backgroundColor: 'green' }}>Preloader</div>;
+  return <div className='loader'>Preloader</div>;
 };

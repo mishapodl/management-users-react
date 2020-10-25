@@ -5,5 +5,17 @@ import { NotFound } from './NotFound/NotFound';
 import { Preloader } from './Preloader/Preloader';
 import { UsersList } from './UsersList/UsersList';
 import { Button } from './Button/Button';
+import { Logo } from './Logo/Logo';
+import { Navigation } from './Navigation/Navigation';
 
-export { Clock, TabsUsers, Filter, NotFound, Preloader, UsersList, Button };
+export {
+  Clock,
+  TabsUsers,
+  Filter,
+  NotFound,
+  Preloader,
+  UsersList,
+  Button,
+  Logo,
+  Navigation,
+};

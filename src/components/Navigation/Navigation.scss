@@ -1,0 +1,17 @@
+@import '../../colors.scss';
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  height: 50px;
+}
+
+.nav-bar {
+  width: 400px;
+  background-color: $nav-bar;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}

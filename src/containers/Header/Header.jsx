@@ -1,12 +1,18 @@
 import React from 'react';
-import { Clock } from './../../components';
+import { Clock, Logo, Navigation } from './../../components';
 import { useSelector } from 'react-redux';
+import './Header.scss';
 
 export const Header = () => {
   const { users, countPinedUsers } = useSelector(state => state.users);
   return (
     <header className='header'>
+      <div className='bg-overlay'></div>
       <div className='header-content'>
+        <div className='navigation'>
+          <Logo />
+          <Navigation />
+        </div>
         <div className='clock'>
           <Clock />
         </div>

@@ -17,7 +17,7 @@ export const Users = () => {
   const [search, setSearch] = useState('');
 
   const dispatch = useDispatch();
-  useDataApi(`https://randomuser.me/api/?results=7`);
+  useDataApi(`https://randomuser.me/api/?results=5`);
 
   const { isLoading, users } = useSelector(s => s.users);
   const filterUsers = useSelector(searchGender(search));
@@ -40,7 +40,7 @@ export const Users = () => {
         )}
       </div>
       <div className='users-load'>
-        <Button onClick={onLoadMore} title='LoadMore' className='load' />
+        <Button onClick={onLoadMore} title='Load more' className='load' />
       </div>
     </section>
   );

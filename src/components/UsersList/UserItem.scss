@@ -1,0 +1,54 @@
+.list li {
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  transition: 0.3s;
+  &:hover {
+    opacity: 0.7;
+  }
+  & a {
+    text-decoration: none;
+    padding: 8px;
+    display: block;
+    line-height: 30px;
+    color: #3a3a3a;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & .user-data {
+      display: flex;
+      align-items: center;
+      & .user-img {
+        margin-right: 10px;
+        & img {
+          display: block;
+        }
+      }
+    }
+    .time-data {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      & .time {
+        font-size: 8px;
+        line-height: 16px;
+        padding-top: 5px;
+      }
+      button {
+        height: 25px;
+        width: 25px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+        &.btn-pin {
+          background-color: #52d352;
+        }
+        &.btn-un-pin {
+          background-color: #f36f6f;
+        }
+      }
+    }
+  }
+}

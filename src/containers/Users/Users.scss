@@ -1,4 +1,35 @@
-.users-list {
-  background: goldenrod;
-  min-height: 250px;
+.container-users {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px 20px;
+  margin: 40px 0;
+  min-height: 600px;
+  box-shadow: 0px 5px 20px 8px #00000038;
+  display: flex;
+  flex-direction: column;
+  & .users-list {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+  }
+  & .users-load {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 10px;
+    & .btn-load {
+      width: 200px;
+      height: 40px;
+      background-color: #1e1e1e;
+      border: 0;
+      color: #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-transform: uppercase;
+      outline: none;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
 }

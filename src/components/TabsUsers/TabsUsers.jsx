@@ -1,4 +1,5 @@
 import React from 'react';
+import './TabsUsers.scss';
 
 export const TabsUsers = ({ onClick, tabName }) => {
   return (
