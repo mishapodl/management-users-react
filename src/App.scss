@@ -1,6 +1,25 @@
-body {
-  background-color: rgb(214, 134, 134);
-  & div {
-    background-color: green;
-  }
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 0 auto;
+  background-color: rgb(0, 124, 128);
+}
+
+main {
+  flex: 1 0 auto;
+  background-color: grey;
+}
+
+footer {
+  background-color: tan;
+  flex: 0 0 auto;
 }

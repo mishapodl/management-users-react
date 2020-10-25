@@ -1,17 +1,8 @@
-// import { combineReducers } from 'redux';
-import { HELLO } from './../constants';
+import { combineReducers } from 'redux';
+import { userReducer } from './users';
 
-// const rootReducer = combineReducers({
-//   
-// });
-
-const rootReducer = (state = {}, action) => {
-  switch (action.type) {
-    case HELLO:
-      return console.log('Hello');
-    default:
-      return state;
-  }
-};
+const rootReducer = combineReducers({
+  users: userReducer,
+});
 
 export default rootReducer;
