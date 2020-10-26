@@ -1,17 +1,28 @@
 import React from 'react';
 import { Clock, Logo, Navigation } from './../../components';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import './Header.scss';
+import { setUnActiveProfile } from '../../redux/actions';
 
 export const Header = () => {
-  const { users, countPinedUsers } = useSelector(state => state.users);
+  const { users, countPinedUsers, activeProfile } = useSelector(
+    state => state.users
+  );
+  const dispatch = useDispatch();
+  const onUnActiveProfile = () => {
+    dispatch(setUnActiveProfile());
+  };
+
   return (
     <header className='header'>
       <div className='bg-overlay'></div>
       <div className='header-content'>
-        <div className='navigation'>
+        <div className='top-header'>
           <Logo />
-          <Navigation />
+          <Navigation
+            activeProfile={activeProfile}
+            onUnActiveProfile={onUnActiveProfile}
+          />
         </div>
         <div className='clock'>
           <Clock />

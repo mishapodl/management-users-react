@@ -1,9 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
+import './Profile.scss';
 export const Profile = props => {
   const {
-    id,
+    login,
     gender,
     name,
     location,
@@ -12,24 +11,20 @@ export const Profile = props => {
     phone,
     picture,
   } = props.location.state.user;
+  
   return (
     <>
-      <Link to='/'>Home</Link>
-      <div id={id}>
-        <div>
-          <img alt='img' src={picture.thumbnail} />
+      <div id={login.username} className='profile-container'>
+        <div className='avatar'>
+          <img alt={login.username} src={picture.large} />
         </div>
-        <ul>
-          <li>
-            Name: {name.first} {name.last}
-          </li>
-          <li>
-            Address: {location.country} {location.state} {location.city}
-          </li>
-          <li>Email: {email}</li>
-          <li>Gender: {gender}</li>
-          <li>DOB: {dob.date}</li>
-          <li>Tel: {phone}</li>
+        <ul className='contacts'>
+          <li><span>Name:</span> {name.first} {name.last}</li>
+          <li><span>Address:</span> {location.country} {location.state} {location.city}</li>
+          <li><span>Email:</span> {email}</li>
+          <li><span>Gender:</span>{gender}</li>
+          <li><span>DOB:</span> {dob.date}</li>
+          <li><span>Tel:</span> {phone}</li>
         </ul>
       </div>
     </>

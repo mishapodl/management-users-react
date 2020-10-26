@@ -5,6 +5,8 @@ import {
   fetchLoad,
   setPinUser,
   setUnPinUser,
+  setActiveProfile,
+  setUnActiveProfile,
 } from './users';
 
 export {
@@ -14,4 +16,6 @@ export {
   fetchLoad,
   setUnPinUser,
   setPinUser,
+  setActiveProfile,
+  setUnActiveProfile,
 };

@@ -1,6 +1,10 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { setPinUser, setUnPinUser } from '../../redux/actions';
+import {
+  setPinUser,
+  setUnPinUser,
+  setActiveProfile,
+} from '../../redux/actions';
 import { UserItem } from './UserItem';
 import './UsersList.scss';
 
@@ -22,6 +26,10 @@ export const UsersList = ({ users, tabName }) => {
     dispatch(setUnPinUser(id));
   };
 
+  const onGoToProfile = () => {
+    dispatch(setActiveProfile());
+  };
+
   return (
     <ul className='list'>
       {users.map((user, i) => {
@@ -33,6 +41,7 @@ export const UsersList = ({ users, tabName }) => {
                   user={user}
                   onPinUser={onPinUser}
                   onUnPinUser={onUnPinUser}
+                  onGoToProfile={onGoToProfile}
                 />
               </li>
             )}

@@ -1,10 +1,19 @@
-import React from 'react'
+import React from 'react';
 import './Navigation.scss';
+import { Link } from 'react-router-dom';
 
-export const Navigation = () => {
+export const Navigation = ({ activeProfile, onUnActiveProfile }) => {
+  console.log(activeProfile)
   return (
-    <div className="nav-bar">
-      Navigation
+    <div className='navigation'>
+      <div className='nav-bar'>
+        <span>Navigation</span>
+      </div>
+      {activeProfile && (
+        <Link to='/' className='link-home' onClick={onUnActiveProfile}>
+          Back
+        </Link>
+      )}
     </div>
-  )
-}
+  );
+};

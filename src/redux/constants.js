@@ -7,4 +7,6 @@ export const FETCH = {
 export const USER = {
   PIN: 'PIN',
   UN_PIN: 'UN_PIN',
+  ACTIVE_PROFILE: 'ACTIVE_PROFILE',
+  UN_ACTIVE_PROFILE: 'UN_ACTIVE_PROFILE',
 };

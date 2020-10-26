@@ -19,8 +19,11 @@
     & .user-data {
       display: flex;
       align-items: center;
+      flex: 1;
       & .user-img {
         margin-right: 10px;
+        border-radius: 50%;
+        overflow: hidden;
         & img {
           display: block;
         }

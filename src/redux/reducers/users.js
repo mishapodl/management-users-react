@@ -7,6 +7,7 @@ const initState = {
   isLoading: false,
   isFailure: false,
   isLoad: true,
+  activeProfile: false,
 };
 
 // const setPinUser = ({ id, time }, state) => {
@@ -72,6 +73,16 @@ export const userReducer = (state = initState, action) => {
       return {
         ...state,
         isLoad: action.payload,
+      };
+    case USER.ACTIVE_PROFILE:
+      return {
+        ...state,
+        activeProfile: true,
+      };
+    case USER.UN_ACTIVE_PROFILE:
+      return {
+        ...state,
+        activeProfile: false,
       };
     case USER.PIN:
       return {

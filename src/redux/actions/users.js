@@ -15,16 +15,23 @@ export const fetchFailure = () => ({
 
 export const fetchLoad = (payload = false) => ({
   type: FETCH.LOAD,
-  payload
+  payload,
 });
 
 export const setPinUser = payload => ({
   type: USER.PIN,
-  payload
+  payload,
 });
 
 export const setUnPinUser = payload => ({
   type: USER.UN_PIN,
-  payload
+  payload,
 });
 
+export const setActiveProfile = () => ({
+  type: USER.ACTIVE_PROFILE,
+});
+
+export const setUnActiveProfile = () => ({
+  type: USER.UN_ACTIVE_PROFILE,
+});

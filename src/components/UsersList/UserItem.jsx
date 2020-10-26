@@ -2,7 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './UserItem.scss';
 
-export const UserItem = ({ user, onPinUser, onUnPinUser, time }) => {
+export const UserItem = ({
+  user,
+  onPinUser,
+  onUnPinUser,
+  onGoToProfile,
+  time,
+}) => {
   const { name, active, login, picture } = user;
   return (
     <>
@@ -13,7 +19,7 @@ export const UserItem = ({ user, onPinUser, onUnPinUser, time }) => {
         }}
         className='user'
       >
-        <span className='user-data'>
+        <span className='user-data' onClick={onGoToProfile}>
           <span className='user-img'>
             <img src={picture.thumbnail} alt={login.username} />
           </span>
