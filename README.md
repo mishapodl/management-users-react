@@ -2,3 +2,4 @@
 ### `yarn start`
 ### `yarn build`
 
+# Sometimes request will be blocked by CORS policy. Solve: refresh page.
