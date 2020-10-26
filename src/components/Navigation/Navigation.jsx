@@ -3,7 +3,6 @@ import './Navigation.scss';
 import { Link } from 'react-router-dom';
 
 export const Navigation = ({ activeProfile, onUnActiveProfile }) => {
-  console.log(activeProfile)
   return (
     <div className='navigation'>
       <div className='nav-bar'>

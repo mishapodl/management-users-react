@@ -17,11 +17,9 @@ export const useDataApi = query => {
     const fetchData = async () => {
       dispatch(fetchInit());
       try {
-        console.log('success')
         const result = await axios(query);
         dispatch(fetchSuccess(result.data));
       } catch (error) {
-        console.log('failure')
         dispatch(fetchFailure());
       }
     };
