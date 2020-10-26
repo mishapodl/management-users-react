@@ -7,8 +7,10 @@
   height: 50px;
   & .navigation {
     display: flex;
+    max-width: 400px;
+    width: 100%;
     & .nav-bar {
-      width: 400px;
+      width: 100%;
       background-color: $nav-bar;
       display: flex;
       align-items: center;
