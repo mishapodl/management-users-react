@@ -2,4 +2,4 @@
 ### `yarn start`
 ### `yarn build`
 
-#### Sometimes request will be blocked by CORS policy.(open console) Solve: refresh page.
+#### Sometimes request can be able blocked by CORS policy.(open console) Solve: refresh page.
